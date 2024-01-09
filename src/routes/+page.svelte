@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Nav from '$lib/nav.svelte';
+</script>
+
+
+<h1>Svelte's space</h1>
+<Nav />
+
+<slot></slot>
+
+<style lang="scss">
+   :global(body) {
+   width: 400px;
+   margin: 0 auto;
+   font-family: sans-serif;
+ }
+</style>
